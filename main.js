@@ -46,6 +46,7 @@ function pushtodom(input) {
   //array of objects here
   var gifurls = response.data;
   var container = document.querySelector(".js-container");
+  container.innerHTML="";
   gifurls.forEach(function(image) {
 
     var src = (image.images.fixed_height.url);
