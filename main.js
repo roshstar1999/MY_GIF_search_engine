@@ -46,13 +46,13 @@ function pushtodom(input) {
   //array of objects here
   var gifurls = response.data;
   var container = document.querySelector(".js-container");
-  container.innerHTML="";
+  container.innerHTML = "";  //Add this line
   gifurls.forEach(function(image) {
 
     var src = (image.images.fixed_height.url);
    console.log(src);
 
-    container.innerHTML += "<img src=\"" + src + "\" class=\"container-image\">";
+    container.innerHTML += '<img src="' + src + '" class="col-sm-3 crud_image">';
   });
 
 
